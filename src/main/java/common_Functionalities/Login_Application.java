@@ -13,6 +13,15 @@ public class Login_Application {
 	public static WebElement password;
 	@FindBy(xpath="//input[@value='Login']")
 	public static WebElement login;
-	
-
+	@FindBy(xpath="//i[normalize-space()='logout']")
+	public static WebElement logout;
+public static boolean elementisdisplay(WebElement element) {
+	boolean displayed=false;
+	try {
+		displayed = element.isDisplayed();
+	}catch(Exception e) {
+		e.printStackTrace();
+	}
+	return displayed;
+}
 }

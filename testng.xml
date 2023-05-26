@@ -3,8 +3,16 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="SIB.SIB_Project.AppTest"/>
-      <class name="common_Functionalities.Common_Functions"/>
+     <class name="testcases_Personalizationprocess_Authorized_Cards.Authorized_Cards_By_Filter_All"/>
+      <class name="testcases_Personalizationprocess_Cvv_Generation.Cvv_Generation_By_Filter_All"/>
+       <class name="testcases_Personalizationprocess_PinGeneartion.Pin_Generation_By_Filter_All"/>
+      <class name="testcases_Personalizationprocess_EncodindAndEmbossing.EncodindandEmbosing_NonCPC_All"/>
+      <class name="testcases_Personalizationprocess_Issue_Cards.IssueCards__By_Filter_All"/>
+     
+      <class name="testcases_Recieve_Cards.Receive_Cards_By_all"/>
+      <class name="testcases_Personalizationprocess_Authorized_Cards.AuthoriseCards_By_Product"/>
+     
+     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

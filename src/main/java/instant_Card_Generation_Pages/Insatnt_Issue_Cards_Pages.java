@@ -1,13 +1,13 @@
-package personalizedCards_Pages;
+package instant_Card_Generation_Pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class issue_Cards_Pages {
-	@FindBy(xpath="//span[text()='Personalization Progress']")
-	public static WebElement personalizedprocess ;
-	@FindBy (xpath="//span[text()='Instant Issue Cards']")
-	public static WebElement issuecards;
+public class Insatnt_Issue_Cards_Pages {
+	@FindBy(xpath="//span[normalize-space()='Instant Card Generation']")
+	public static WebElement instantcardgeneration ;
+	@FindBy (xpath="//span[normalize-space()='Instant Issue Cards']")
+	public static WebElement insatissuecards;
 	@FindBy(xpath="//button[@class='mat-focus-indicator mat-raised-button mat-button-base mat-primary ng-star-inserted']")
 	public static WebElement retrieve;
 	@FindBy(xpath="//span[normalize-space()='Issue']")

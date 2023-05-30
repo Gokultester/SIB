@@ -5,10 +5,14 @@
     <classes>
       <class name="testcases_Personalized_Overall_All.OverallCaeses_All">
         <methods>
+          <include name="authorizePINAll"/>
+          <include name="recieveAll"/>
           <include name="browserlaunch"/>
           <include name="endTest"/>
+          <include name="EncodingandEmbossingTheData"/>
           <include name="authorizeCvvAll"/>
           <include name="authorize"/>
+          <include name="issuecardsAll"/>
           <include name="closebrowser"/>
           <include name="startTest"/>
         </methods>

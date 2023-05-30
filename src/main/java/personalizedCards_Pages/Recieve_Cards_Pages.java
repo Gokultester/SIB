@@ -8,7 +8,9 @@ public class Recieve_Cards_Pages {
 	public static WebElement personalizedprocess ;
 	@FindBy(xpath="//span[normalize-space()='Receive-Cards']")
 	public static WebElement receivecards;
-	@FindBy(xpath="//div[@class='mat-form-field-infix ng-tns-c46-5']")
+	/*@FindBy(xpath="//div[@class='mat-form-field-infix ng-tns-c46-5']")
+	public static WebElement selectbatchNumber;*/
+	@FindBy(xpath ="//span[@class='mat-select-placeholder mat-select-min-line ng-tns-c67-15 ng-star-inserted']")
 	public static WebElement selectbatchNumber;
 	
 	

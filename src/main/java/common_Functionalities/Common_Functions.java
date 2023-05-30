@@ -6,9 +6,11 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.*;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -18,14 +20,16 @@ public class Common_Functions {
 	static  Properties properties = null;
 	
 	@BeforeSuite
-public void browserlaunch() {
+public static void browserlaunch() {
 	WebDriverManager.chromedriver().setup();
 	driver=new ChromeDriver();
-	driver.get("http://172.16.10.48:8080/SIB/#/login");
+driver.get("http://172.16.10.48:8080/SIB/#/login");
 	driver.manage().window().maximize();	
+	
 }
 	@AfterSuite
 	public void closebrowser() {
 		driver.close();
 	}
+	
 }

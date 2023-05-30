@@ -16,7 +16,7 @@ public class Pin_Generation_By_Filter_All extends Common_Functions {
 		PageFactory.initElements(driver,Common_Functions.class );
 		}
 	@Test(priority=1)
-	private void authorizecardsAll() throws InterruptedException {
+	private void pinsAll() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(7000,TimeUnit.SECONDS);
 		Actions actions = new Actions(driver);
 		PageFactory.initElements(driver, Login_Application.class);
@@ -25,7 +25,8 @@ public class Pin_Generation_By_Filter_All extends Common_Functions {
 		Login_Application.password.sendKeys("Test@123");
 		Login_Application.login.click();
 		PIN_Generation_Pages.personalizedprocess.click();
-		PIN_Generation_Pages.cvvGeneration.click();
+		PIN_Generation_Pages.pinGeneration.click();
+		//PIN_Generation_Pages.cvvGeneration.click();
 		PIN_Generation_Pages.retrieve.click();
 		PIN_Generation_Pages.checkbox.click();
 		actions.click(PIN_Generation_Pages.authorise).build().perform();

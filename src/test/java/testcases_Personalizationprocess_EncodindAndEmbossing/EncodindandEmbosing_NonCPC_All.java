@@ -21,6 +21,9 @@ public class EncodindandEmbosing_NonCPC_All extends Common_Functions{
 		driver.manage().timeouts().implicitlyWait(8000,TimeUnit.SECONDS);
 		Actions actions = new Actions(driver);
 		PageFactory.initElements(driver, Login_Application.class);
+		
+        String extractedText = "No data available in table";
+        String expectedText = "This is the expected text";
 		Login_Application.username.sendKeys("maker");
 		Login_Application.password.sendKeys("Test@123");
 		Login_Application.login.click();
@@ -28,6 +31,8 @@ public class EncodindandEmbosing_NonCPC_All extends Common_Functions{
 		EncodingAndEmbossing_Pages.personalizedprocess.click();
 		EncodingAndEmbossing_Pages.encodingandembossing.click();
 		EncodingAndEmbossing_Pages.NON_CPC.click();
+	
+
 		EncodingAndEmbossing_Pages.retrieve.click();
 		//EncodingAndEmbossing.checkbox.click();
 		EncodingAndEmbossing_Pages.authorise.click();

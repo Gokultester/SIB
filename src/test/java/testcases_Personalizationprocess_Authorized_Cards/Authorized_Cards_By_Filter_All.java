@@ -67,7 +67,7 @@ public void browser() throws InterruptedException {
  @Test(priority=1) private void authorizecardsAll() throws
   InterruptedException, IOException {
 	 ExtentTest authorizetest =	extentReports.createTest("authorizecardsAll"); 
- driver.manage().timeouts().implicitlyWait(5000,TimeUnit.SECONDS);
+ driver.manage().timeouts().implicitlyWait(9000,TimeUnit.SECONDS);
   
  
   Actions actions = new Actions(driver);
@@ -82,9 +82,9 @@ public void browser() throws InterruptedException {
  authorizetest.log(Status.PASS, "authorizecard button clicked successfully");
  Authorized_cards_Pages.retrieve.click();
  authorizetest.log(Status.PASS, "retrieve button clicked successfully");
- Authorized_cards_Pages.checkbox.click();
+ Authorized_cards_Pages.checkboxAll.click();
  actions.click(Authorized_cards_Pages.authorise).build().perform();
- Thread.sleep(2000);
+
  
 
 

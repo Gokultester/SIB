@@ -34,7 +34,9 @@ public class Receive_Cards_By_all extends Common_Functions {
 		Recieve_Cards_Pages.personalizedprocess.click();
 		System.out.println("personalized card selected");
 		Recieve_Cards_Pages.receivecards.click();
+		Recieve_Cards_Pages.selectbatchNumber.click();
 		System.out.println("receive card selected");
+		Recieve_Cards_Pages.preselect.click();
 		Select se = new Select(Recieve_Cards_Pages.selectbatchNumber);
 		se.selectByVisibleText("437501_01032379_PA.PRE");
 	//	actions.click(Recieve_Cards_Pages.selectbatchNumber).build().perform();	

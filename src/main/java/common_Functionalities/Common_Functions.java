@@ -29,7 +29,7 @@ driver.get("http://172.16.10.48:8080/SIB/#/login");
 }
 	@AfterSuite
 	public void closebrowser() {
-		driver.close();
+	//	driver.close();
 	}
 	
 }

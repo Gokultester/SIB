@@ -18,6 +18,8 @@ public class Authorized_cards_Pages {
 	public static WebElement authorise;
 	@FindBy(xpath="//input[@id='checkbox-2']")
 	public static WebElement checkbox;
+	@FindBy(xpath="//input[@id='checkbox-all']")
+	public static WebElement checkboxAll;
 	@FindBy (xpath="//div[@id='mat-select-value-7']")
 	public static WebElement all;
 	@FindBy(xpath="//div[@class='mat-select-arrow ng-tns-c67-16']")
@@ -26,6 +28,7 @@ public class Authorized_cards_Pages {
 	public static WebElement productBased;
 	@FindBy(xpath="//mat-option[@id='mat-option-0']")
 	public static WebElement byselectAll;
+	
 	
 	
 }
